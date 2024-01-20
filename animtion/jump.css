@@ -1,0 +1,46 @@
+div{
+    position: relative;
+    top: 400px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: gold;
+    animation: jump 2s linear infinite ;
+    border-bottom: 2px solid red;;
+}
+@keyframes jump{
+    from{
+        top: 400px;
+        border-radius: 50%;
+        rotate: 0deg;
+    }
+    15%{
+        top: 200px;
+        border-radius: 0%;
+        rotate: 90deg;
+    }
+    30%{
+        top: 400px;
+        border-radius: 50%;
+        rotate: 180deg;
+    }
+    45%{
+        top: 250px;
+        border-radius: 0%;
+        rotate: 90deg;
+    }
+    60%{
+        top: 400px;
+        border-radius: 50%;
+        rotate: 0deg;
+    }
+    75%{ top: 300px;
+        border-radius: 0%;
+        rotate: 90deg;
+    }
+    to{
+        top: 400px;
+        border-radius: 50%;
+        rotate: 180deg;
+    }
+}

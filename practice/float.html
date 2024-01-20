@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+     #child1{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+       
+     }
+     #child2{
+        float: inline-start;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(47, 0, 255);
+     }
+     #child3{
+        height: 200px;
+        width: 200px;
+        background-color: green;
+      
+     }
+     #grchild{
+        float: right;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(41, 3, 3);
+     }
+     #ggrchild{
+        
+        height: 50px;
+        width: 50px;
+        background-color: rgb(128, 0, 98);
+     }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+        <div id="child1">
+            <div id="grchild"></div>
+        </div>
+        <div id="child2">
+            <div id="grchild">
+                <div id="ggrchild"></div>
+            </div>
+        </div>
+        <div id="child3">
+            <div id="grchild3"></div>
+        </div>
+    </div>
+</body>
+</html>

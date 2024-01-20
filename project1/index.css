@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(0deg,#010a25,#1b0743);
+}
+/*top header*/
+#top-bar{
+    display: grid;
+    grid-template-columns: 60px 87px 240px 87px;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-image: linear-gradient(45deg, #0a0b0c, #1b0743);
+}
+#logo img{
+    border-radius: 64px;
+    height: 60px;
+}
+#fav{
+    font-size: 20px;
+    color: #c3bedd;
+}
+#search-bar form{
+    display: flex;
+
+}
+#search-bar form button{
+    z-index: 1;
+    color: whitesmoke;
+    position: relative;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 1px -29px 0px 6px;
+}
+#search-bar form input{
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 24px;
+    padding: 0px 33px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mic{
+    position: relative;
+    z-index: 1;
+    margin: 2px 0px 0px -27px;
+}
+#topleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user img{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    margin-left:15px;
+}
+/*main body*/
+
+main {
+    box-sizing: border-box;
+    display: flex;
+   
+    justify-content: space-evenly;
+}
+#main{
+    width: 60%;
+}
+#new-reles{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+.bg{
+    height: 300px;
+    width: 444px;
+    background-image: url(https://i.ytimg.com/vi/05DrDxjMEbU/maxresdefault.jpg);
+    filter: blur(2px);
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+.left{
+    height:200px;
+    z-index: -1;
+}
+.left img{
+    height: 200px;
+    margin-right:-132px;
+}
+.right{
+    height:200px;
+    z-index: -1;
+}
+.right img{
+    height: 200px;
+    margin-left:-132px;
+}
+.front img{
+    height: 250px!important;
+    margin: 25px 0px;
+}
+#recent-release{
+    color: #c3bedd;
+}
+#rec-songs{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 50%;
+   
+}
+.rec-song {
+    background-image: linear-gradient(45deg,#0f001a,#1b033b);
+   display: flex;
+   flex-wrap:wrap;
+   height: auto;
+   gap: 6px;
+}
+.rec-song .image{
+    height: 80px;
+}
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.name{
+    font-size: 18.6px;
+    font-weight: bolder;
+}
+#Artists{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.artists{
+    text-align: center;
+    color: #8d7ca3;
+    padding: 6px;
+}
+.artists img{
+    height:114px;
+    border-radius: 60px;
+}
+#types{
+    background-image: linear-gradient(rgb(74, 30, 74),rgb(157, 0, 255));
+    height: auto;
+    padding: 6px;
+}
+#type-banner 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+#type-banner img { 
+    height: 114px;
+}
+#moods{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin: 15px;
+    padding: 6px;
+}
+#mood1{
+    background-image: linear-gradient(45deg,rgb(170 25 25 / 51%),rgb(55 172 30 / 71%),rgb(94 50 180 / 55%)),url(https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendy-wei-1190298.jpg&fm=jpg);
+    height: 150px;
+    display: flex;
+    background-size: cover;
+    width: 200px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    color: #ff7979;
+    font-weight: bold;
+
+}
+#mood2{
+    background-image: url(https://musictech.com/wp-content/uploads/2019/10/tutorial-create-edm-free-header@1400x1050.jpg);
+    height: 150px;
+    display: flex;
+    background-size: cover;
+    width: 200px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    color: #ff7979;
+    font-weight: bold;
+}
+#mood3{
+    background-image: url(https://vaya.in/wp-content/uploads/2021/01/Top-10-Ideas-to-Make-the-Road-Trips-More-Fun.jpg);
+    height: 150px;
+    display: flex;
+    background-size: cover;
+    width: 200px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    color: #3b2727;
+    font-weight: bold;
+}
+#mood3 p{
+    opacity: 0;
+    transition: .6s;
+}
+#mood3:hover{
+    background-image: linear-gradient(23deg,rgb(166 170 25 / 51%),rgb(30 172 83 / 71%),rgb(180 50 151 / 55%)),url(https://vaya.in/wp-content/uploads/2021/01/Top-10-Ideas-to-Make-the-Road-Trips-More-Fun.jpg);
+}
+#mood3:hover p{
+    opacity: 1;
+}
+#latest-eng_songs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.la-eg-song img{
+    height: 100px;
+}
+#latest-hin-songs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.la-hin-song img{
+    height: 100px;
+}
+/*aside*/
+#user-play-list {
+    width: 33%;
+    position: relative;
+    left: 15%;
+}
+#songs ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #8d7ca3;
+}
+#songs ul {  
+    text-decoration: none;
+    list-style: none;
+    color: #8d7ca3;
+}
+#songs ul li img{
+height: 100px;
+}

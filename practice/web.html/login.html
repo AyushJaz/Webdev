@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing in/Sign up</title>
+</head>
+
+<body>
+    <div id="main">
+        <form action=".php" id="selection">
+                <input type="radio" value="Singin" name="login" id="Singin">
+                <label for="Singin">Sing in</label>
+            <div >
+                <table>
+                    <tr>
+                        <th> <label for="in name">Username :</label></th>
+                        <th>
+                            <input type="text" id="in name" required placeholder="Username">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th> <label for="in pass">Password :</label></th>
+                        <th><input type="password" id="in pass"   placeholder="password"
+                            required></th>
+                    </tr>
+                </table>
+                <div>
+                    <input type="checkbox" id="remember me" value="remember me" checked>
+                    <label for="remember me">Remember me</label>
+                </div>
+                <div><button value="submit">Singin</button></div>
+            </div>
+            <input type="radio" value="Singup" name="login" id="Singup">
+            <label for="Singup">Sing Up</label>
+            <div>
+                <table>
+                    <tr>
+                        <th> <label for="email">Mail id :</label> </th>
+                        <th> <input type="email" id="email" required placeholder="smith@gmail.com"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="up name"></label></th>
+                        <th><input type="text" id="up name" required placeholder="Username"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="up pass"></label></th>
+                        <th><input type="password" id="up pass" required placeholder="password"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="upcpass"></label></th>
+                        <th><input type="password" id="upcpass" required  placeholder="confirm password"></th>
+                    </tr>
+                </table>
+                <div id="condition">
+                    <input type="checkbox" id="con" value="accepted" required>
+                    <label for="con">I accepet all the terms and condition</label>
+                </div>
+                <button value="submit"> Sing Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

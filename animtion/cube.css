@@ -1,0 +1,44 @@
+#Cube{
+    position: relative;
+    top: 400px;
+    margin: 0px auto;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    animation:rotate 1s ease-in-out alternate infinite;
+}
+@keyframes rotate{
+    from
+    {
+        transform: rotate3d(1,1,1,0deg);
+    }
+    to{
+        transform: rotate3d(1,1,1,180deg);
+    }
+}
+.face{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transform-style: preserve-3d;
+}
+.one{ 
+    background-color: red;
+}
+.two{
+    background-color: green;
+}
+.three{
+    background-color: orange;
+
+}
+.four{
+    background-color: blue;
+    
+}
+.five{
+    background-color: white;
+}
+.six{
+    background-color: yellow;
+}

@@ -1,0 +1,44 @@
+#parent
+{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    background-color: aqua;
+    flex-wrap: wrap-reverse;
+}
+#div1{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: aliceblue;
+}
+#div2{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+}#div3{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: red;
+}#div4{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: blueviolet;
+}#div5{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: green;
+}#div6{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color:gainsboro;
+}#div7{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color:yellow;}

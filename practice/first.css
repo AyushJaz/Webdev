@@ -1,0 +1,16 @@
+h1{
+    color:rgb(184, 49, 49);
+}
+h1:hover{
+    color : blue;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(47, 196, 255);
+}
+img{
+    width: 19vw;
+    text-align: center;/* normaly it wont work on image tag but as we inclosed this image in a <p> tag it will work*/
+}

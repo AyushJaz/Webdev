@@ -1,0 +1,70 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 198, 244);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 374px;
+    border-radius: 24px;
+    width: 244px;
+    box-shadow: 0px 0px 6px 2px #83836b;
+    border: 6px solid black;
+    transform-style: preserve-3d;
+    perspective: 100px;
+}
+.functions{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 6px;
+    width: 231px;
+}
+.ans input
+{
+    width: 217px;
+    height: 60px;
+    background-color: #f9efe0;
+    padding: 6px;
+    border-radius: 9px;
+    font-size: 24px;
+    margin: 6px;
+    box-shadow: 0px 0px 2px 2px;
+    border: 3px solid black;
+}
+.functions div button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    height: 50px;
+    background-color: #f9efe0;
+    box-shadow: 0px 0px 15px 0px #514937cc;
+    width: 50px;
+    text-shadow: 0px -0.6px #514937cc;
+    border-radius: 15px;
+    font-size: 23.298px;
+}
+div.beql button{
+    position: relative;
+    bottom: -29px;
+    border: 2px solid black;
+    height: 107px;
+    font-size: 33px;
+}
+.functions div button:active{
+    color: #0a2d2b;
+    background-color: #d7cdbe;
+}

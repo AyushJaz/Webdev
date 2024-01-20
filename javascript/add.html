@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+    <script lang="javascript">
+        function add()
+        {
+            var a=parseInt(document.getElementById("in1").value);
+            var b= parseInt(document.getElementById("in2").value);
+            var c=a+b;
+            document.getElementById("out")=value;
+        }
+    </script>
+</head>
+<body>
+    <label for="in1">Enter the first number</label>
+    <input  id="in1"><br>
+    <label for="in2">Enter the second number</label>
+    <input id="in2" ><br>
+    <label for="out">Ans</label>
+    <input type="text" id="out" >
+    <input type="button" value="Add" onclick="add()">
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.out{
+    height: 400px;
+    width: 200px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(45, 42, 48);
+    border: 3px solid rgb(30, 35, 35);
+}
+.in
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+.in span{
+    font-size: 60px;
+    transform: rotateZ(-30deg);
+
+}
+.out:hover{
+    border: 2px solid red;
+    animation: ani linear infinite 3s;
+}
+.in:hover{
+    animation: anii linear infinite 3s;
+}
+@keyframes ani {
+    0%{border-color: rgb(249, 187, 1);}
+    10%{border-color: rgb(45, 247, 9);}
+    20%{border-color: rgb(246, 4, 4);}
+    30%{border-color: rgb(67, 249, 1);}
+    40%{border-color: rgb(1, 232, 249);}
+    50%{border-color: rgb(249, 1, 121);}
+    60%{border-color: rgb(224, 1, 249);}
+    70%{border-color: rgb(223, 187, 80);}
+    80%{border-color: rgb(255, 255, 255);}
+    90%{border-color: rgb(1, 51, 249);}
+    100%{ border-color: rgb(243, 16, 156);}
+}
+@keyframes anii {
+    0%{color: rgb(249, 187, 1);}
+    10%{color: rgb(45, 247, 9);}
+    20%{color: rgb(246, 4, 4);}
+    30%{color: rgb(67, 249, 1);}
+    40%{color: rgb(1, 232, 249);}
+    50%{color: rgb(249, 1, 121);}
+    60%{color: rgb(224, 1, 249);}
+    70%{color: rgb(223, 187, 80);}
+    80%{color: rgb(255, 255, 255);}
+    90%{color: rgb(1, 51, 249);}
+    100%{ color: rgb(243, 16, 156);}
+}

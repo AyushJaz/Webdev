@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 67, 55);
+}
+#cube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    transform-style:preserve-3d;
+    transform: perspective(400px);
+    height:400px;
+    width: 400px;
+    animation: rote 5s linear infinite ;
+}
+.grid{
+    height: 66px;
+    width: 66px;
+    margin: 0.3px;
+    transform: perspective(105px);
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px 0px black;
+    border: 5px solid black;
+}
+.face{
+    display: flex;
+    flex-wrap: wrap;
+    height: 198px;
+    position: absolute;
+    border-radius: 7px;
+    width: 199.8px;
+}
+.face5{
+    transform: translatey(100px) rotatex(90deg);
+    background-color: white;
+
+}
+.face3{
+    transform: translateZ(-100px) rotatex(0deg);
+    background-color: blue;
+    
+}
+.face2{
+    background-color: red;
+    transform: translatex(-100px) rotateY(90deg);
+}
+.face4{
+    background-color: orangered;
+    transform: translateX(100px) rotateY(90deg);
+}
+.face6{
+    background-color: yellow;
+    transform: translateY(-100px) rotateX(90deg);
+}
+.face1{
+    background-color: green;
+    transform: translateZ(100px) ;
+}
+@keyframes rote {
+    0%{
+       transform : rotate3d(1,1,1,0);
+    }
+    50%{
+        transform : rotate3d(1,1,1,180deg);
+     }
+     100%{
+        transform : rotate3d(1,1,1,360deg);
+     }
+    
+}

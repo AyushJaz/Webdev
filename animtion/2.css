@@ -1,0 +1,21 @@
+div
+{
+    background-color: green;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    animation: rotate 1.5s ease-in-out  1;
+}
+@keyframes rotate{
+    from{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

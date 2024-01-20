@@ -1,0 +1,51 @@
+#parent
+{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    background-color: aqua;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#div1{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: aliceblue;
+    order: 1;
+}
+#div2{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    order: 2;
+}#div3{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: red;
+}#div4{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: blueviolet;
+    order: 3;
+}#div5{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: green;
+}#div6{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color:gainsboro;
+    order: -1;
+}#div7{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color:yellow;
+    order: -1;
+}

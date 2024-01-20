@@ -1,0 +1,6 @@
+table,th ,tr,td{
+    border: 2px solid black;
+    text-align: center;
+    color: blueviolet;
+    background-color: rgb(139, 73, 73);
+}

@@ -1,0 +1,12 @@
+h1{
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+#form{
+    border-width:2px;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    text-align: center;
+}
