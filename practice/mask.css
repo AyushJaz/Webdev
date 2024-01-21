@@ -1,0 +1,37 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: black;
+}
+.con{
+display: flex;
+align-items: center;
+justify-content:center ;
+min-height: 500px;
+
+}
+.bakimg{
+    position: absolute;
+    top: 0;
+    height:500px;
+    object-fit: cover;
+    width: -webkit-fill-available;
+    -webkit-mask-image: linear-gradient(black,transparent);
+}
+p{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bolder;
+    color: white;
+    mix-blend-mode: overlay;
+    text-shadow: 0 5px 10px black;
+    position: relative;
+    z-index: 2;
+    margin-top: 24px;
+}
+/* @media screen and (max-width:563px){
+    .bakimg{height: 690px;
+    }
+} */
