@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    background-color: #255c8b;
+    height: 60px;
+}
+
+.logo {
+    float: left;
+    font-size: 42px;
+    font-weight: 900;
+    color: #ffffed;
+    font-family: system-ui;
+    margin-left: 24px;
+}
+
+.list {
+    margin: 20px;
+    float: right;
+    margin-right: 24px; /* Corrected typo: 24px instead of 24x */
+}
+
+.list li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.list a {
+    text-decoration: none;
+    color: #ffffed;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.list a:hover {
+    color: rgb(48, 245, 202);
+    background-color: #b3cae333;
+    border-radius: 6px;
+    border-bottom: rgb(39, 210, 229) 2px solid;
+}
+
+.list a:active {
+    background-color: #1c5a90;
+    color: rgb(241, 240, 190); /* Corrected syntax */
+    border-bottom: rgb(241, 240, 190) 2px solid; /* Corrected syntax */
+}
+
+.hamcon {
+    height: 10px;
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    visibility: hidden;
+}
+
+.hamup {
+    position: relative;
+    top: -20px;
+    box-sizing: border-box;
+    width: 42px;
+    cursor: pointer;
+}
+
+#check {
+    visibility: hidden;
+}
+
+.ham {
+    height: 4px;
+    width: 30px;
+    margin: 6px;
+    border-radius: 6px;
+    background-color: rgb(250, 246, 246);
+}
+
+@media screen and (max-width: 633px) {
+
+    .hamcon {
+        visibility: visible;
+    }
+
+    .list {
+        top: 60px;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        background-color: #08090b;
+        color: white;
+        text-align: center;
+        margin: 0px;
+        left:-100vw;
+        transition:left 1s ease;
+    }
+
+    .list li, a { /* Corrected: .list li, .list a instead of .list li,a */
+        display: block;
+        margin: 42px;
+    }
+    #check:checked ~ .list {
+        left: 0;
+    }
+}
