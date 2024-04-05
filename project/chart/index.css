@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: linear-gradient(60deg ,rgb(22 27 46), rgb(17 21 36));
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    background-color: #161b2e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 20%;
+    align-items: center;
+}
+.leftfont{
+    margin: 20px 0px ;
+    color: blueviolet;
+    font-size: 20px; 
+    text-decoration: none;
+    padding: 6px;
+    background-color: transparent;
+    border: none;
+    text-transform:uppercase;
+    border-bottom: 1px solid blueviolet;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    color: azure;
+    padding: 6px;
+}
+.right{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.top,.mid,.end{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6px;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 6px;
+    align-items: center;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.avgfirst,.avgfull{
+    width: 200px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 24px;
+    background-image: linear-gradient(51deg, rgb(212 112 241), rgb(159 125 248));
+}
+.avgfull{
+    background-image: linear-gradient(42deg, rgb(28 236 228), rgb(69 145 218));
+}
+sub{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.message,.email{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px;
+    width: 150px;
+    padding: 6px 24px;
+    background-image: linear-gradient(#141a2f, #161c31);
+}
+.message span,.email span{
+    border-radius: 50%;
+    padding: 6px;
+    font-weight: lighter;
+    border: 0.5px solid black;
+    color: black;
+    background-image: linear-gradient(#ff82ad, #d977f5);
+}
+.email span{
+    background-image: linear-gradient(#03f8f5, #6a69df);
+}
+#line{
+    min-height: 300px;
+    max-height: 600px;
+    max-width: 960px;
+    min-width: 240px
+}
+.audio{
+    background-color: #161b2e;
+}

@@ -1,0 +1,149 @@
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+::before,::after
+{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+section{
+    background-color: var(--bg-black-900);
+    display: block;
+    min-height: 100vh;
+    position: fixed;
+    left: 270px;
+    top: 0px; 
+    right: 0px;
+    opacity: 1;
+}
+.aside{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 1px solid var(--bg-black-50);
+    z-index: 10;
+    height: 100%;
+    padding: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.aside .logo
+{
+    position: absolute;
+    font-size: 33px;
+    text-transform: capitalize;
+    top: 50px;
+}
+.aside .logo a{
+    color: var(--text-black-900);
+    font-weight: 900;
+    padding:15px 20px ;
+    font-size: 33px;
+    letter-spacing: 6px;
+    position: relative;
+}
+.aside .logo a span{
+    font-family: 'Clicker Script';
+    font-size: 42px;
+}
+.aside .logo a::before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-bottom: 4.2px solid var(--skin-color);
+    border-left:  4.2px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+.aside .logo a::after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-top: 4.2px solid var(--skin-color);
+    border-right:  4.2px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+.aside .nav-toggler{
+    height: 42px;
+    width: 42px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer; 
+    position: fixed;
+    top: 24px;
+    left: 303px;
+    border-radius: 5.1px;
+    background-color: var(--bg-black-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aside .nav-toggler span{
+    height: 2px;
+    width: 17px;
+    background-color: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+.aside .nav-toggler span::before{
+    content: "";
+    height: 2px;
+    width: 17px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: -6px;
+}
+.aside .nav-toggler span::after{
+    content: "";
+    height: 2px;
+    width: 17px;
+    background-color: var(--skin-color);
+    position: absolute;
+    bottom: -6px;
+}
+.aside .nav{
+    margin-top: 50px;
+}
+.aside .nav li{
+    margin-bottom: 24px;
+    display: block;
+}
+.aside .nav li a {
+      font-size: 15px;
+      font-weight: 600;
+      display: block;
+      border-bottom: 1px solid var(--bg-black-50);
+      color: var(--text-black-900);
+}
+.aside .nav li a.active{
+    color: var(--skin-color);
+}
+.aside .nav li a i{
+    margin-right: 15px;
+}

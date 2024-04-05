@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chart</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="left">
+            <a href="#" class="leftfont">Profile</a>
+            <div >
+                <h1 class="leftfont">REPPORT</h1>
+            <ul>
+                <li>Graphs</li>
+                <li>Texts</li>
+            </ul>
+        </div>
+        </div>
+        <div class="right">
+            <div class="main">
+                <div class="top">
+                    <div class="avgfirst">
+                        <p>Avg First Reply Time</p>
+                        <p>30 <sub>h</sub> 15 <sub>min</sub>
+                        </p>
+                    </div>
+                    <div class="avgfull">
+                        <p>Avg Full Resolve Time</p>
+                        <p>30 <sub>h</sub> 15 <sub>min</sub></p>
+                    </div>
+                    <div class="msem">
+                        <div class="message"><span class="material-symbols-outlined">
+                            chat
+                            </span> Message</div>
+                        <div class="email"><span class="material-symbols-outlined">
+                            mail
+                            </span> Email</div>
+                    </div>
+                </div>
+                <div class="mid">
+                    <canvas id="line"></canvas></div>
+                <div class="end">
+                    <canvas id="tictype"></canvas>
+                    <canvas id="return"></canvas>
+                </div>
+            </div>
+            <div class="side">
+                <div class="up"><canvas id="firstResolve"></canvas></div>
+                <div class="down"><canvas id="ticPerWeek"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

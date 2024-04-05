@@ -12,29 +12,29 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility.css">
 </head>
-
 <body>
     <div class="left">
         <nav>
             <ul>
-                <li >
-                    <a href="#" class="formating-left">
+                <li>
+                    <a href="#" class="formating-left ">
                         <span class="material-symbols-outlined">
                             home
                         </span>
                         Home
                     </a>
                 </li>
-                <li >
-                    <a href="#" class="formating-left">
+                <li>
+                    <a href="#" class="formating-left ">
                         <span class="material-symbols-outlined">
                             search
                         </span>
                         Search
                     </a>
                 </li>
-                <li >
+                <li>
                     <a href="#" class="formating-left">
                         <span class="material-symbols-outlined">
                             video_library
@@ -77,15 +77,16 @@
     </div>
     <div class="right">
         <div class="top">
-            <div class="togal">
+            <div class="togalf">
                 <div class="arrows">
-                    <span class="material-symbols-outlined">
+                    <button> <span style="margin-left: 8px; background-color: transparent;"  class="material-symbols-outlined">
                         arrow_back_ios
-                    </span>
+                    </span></button>
                 </div>
-                <div class="arrows"><span class="material-symbols-outlined">
+                <div class="arrows">
+                    <button><span class="material-symbols-outlined">
                         arrow_forward_ios
-                    </span>
+                    </span></button>
                 </div>
             </div>
             <div class="nvigation">
@@ -106,17 +107,29 @@
                     </li>
                 </ul>
             </div>
-            <div class="user">
-                <label for="dropdown"><img src="image/eited.jpg" alt="user">
+            <div class="user" id="user-section">
+                <label for="user-name">
+                <img src="image/edited photo.jpg" alt="user">
+                    
                     <p class="user-name">Ayush Jaiswal</p>
                     <span class="material-symbols-outlined">
                         arrow_drop_down
                     </span>
-                </label>
+                </label>    
+                <div id="option">
+                    <option value="hadcbh" class="hover">Profile</option>
+                    <option value="hadcbh" class="hover">Account Setting</option>
+                    <option value="hadcbh" class="hover">logout</option>
+                </div>                
                 <input type="checkbox" id="user-name">
             </div>
         </div>
+        <div class="audioplayer">
+            <audio controls class="audio">
+                <source src="http://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
-
 </html>
